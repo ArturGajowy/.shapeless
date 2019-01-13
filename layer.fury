@@ -1,7 +1,50 @@
+version	1
 schemas	default	id	default
-		projects	
-		repos	
-		imports	
-		main	None
+		projects	shapeless	id	shapeless
+				modules	core	id	core
+						kind	library
+						main	None
+						manifest	
+						compiler	projectId	scala
+							moduleId	compiler
+							intransitive	true
+						after	shapeless/gen	projectId	shapeless
+								moduleId	gen
+								intransitive	false
+						params	
+						sources	shapeless:core/src/main/scala	shapeless:core/src/main/scala
+							shapeless:core/src/main/scala_2.11+/shapeless	shapeless:core/src/main/scala_2.11+/shapeless
+							shapeless:core/src/main/scala_2.13-/shapeless	shapeless:core/src/main/scala_2.13-/shapeless
+							shared:shapeless	shared:shapeless
+						binaries	
+						resources	
+						bloopSpec	None
+					gen	id	gen
+						kind	application
+						main	Some	Boilerplate
+						manifest	
+						compiler	projectId	scala
+							moduleId	compiler
+							intransitive	true
+						after	
+						params	
+						sources	src	src
+						binaries	
+						resources	
+						bloopSpec	None
+				main	Some	core
+				license	unknown
+				description	
+		repos	base	id	base
+				repo	git@github.com:propensive/base.git
+				refSpec	master
+				local	None
+			shapeless	id	shapeless
+				repo	git@github.com:milessabin/shapeless.git
+				refSpec	master
+				local	None
+		imports	base:2.12.6	repo	base
+				schema	2.12.6
+		main	Some	shapeless
 main	default
 aliases	
