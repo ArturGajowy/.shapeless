@@ -1,5 +1,5 @@
 version	1
-schemas	default	id	default
+schemas	scala-2.12	id	scala-2.12
 		projects	shapeless	id	shapeless
 				modules	core	id	core
 						kind	library
@@ -46,5 +46,5 @@ schemas	default	id	default
 		imports	base:2.12.6	repo	base
 				schema	2.12.6
 		main	Some	shapeless
-main	default
+main	scala-2.12
 aliases	
