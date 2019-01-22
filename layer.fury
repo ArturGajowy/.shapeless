@@ -93,7 +93,7 @@ schemas	scala-2.12	id	scala-2.12
 		repos	scala	id	scala
 				repo	git@github.com:propensive/.scala.git
 				track	master
-				commit	e56061e0eac4dc1de7be2193341d0ede826ce1f4
+				commit	42f7acc6af9ecfdec6fb6eaa400aada44030554c
 				local	None
 			shapeless	id	shapeless
 				repo	git@github.com:milessabin/shapeless.git
