@@ -35,8 +35,8 @@ schemas	scala-2.12	id	scala-2.12
 						resources	
 						bloopSpec	None
 				main	Some	core
-				license	unknown
-				description	
+				license	apache-2.0
+				description	Generic programming for Scala
 		repos	base	id	base
 				repo	git@github.com:propensive/base.git
 				track	master
@@ -88,8 +88,8 @@ schemas	scala-2.12	id	scala-2.12
 						resources	
 						bloopSpec	None
 				main	Some	core
-				license	unknown
-				description	
+				license	apache-2.0
+				description	Generic programming for Scala
 		repos	scala	id	scala
 				repo	git@github.com:propensive/.scala.git
 				track	master
