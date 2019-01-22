@@ -37,19 +37,17 @@ schemas	scala-2.12	id	scala-2.12
 				main	Some	core
 				license	apache-2.0
 				description	Generic programming for Scala
-		repos	base	id	base
-				repo	git@github.com:propensive/base.git
+		repos	scala	id	scala
+				repo	git@github.com:propensive/.scala.git
 				track	master
-				commit	b7021d258bd9411bd7662025072d6a8e8c64fa0e
+				commit	42f7acc6af9ecfdec6fb6eaa400aada44030554c
 				local	None
 			shapeless	id	shapeless
 				repo	git@github.com:milessabin/shapeless.git
 				track	master
 				commit	43140dbfa340f55bd753e2ab5977cc177debd559
 				local	None
-		imports	base:2.12.6	repo	base
-				schema	2.12.6
-			scala:scala-2.12.8	repo	scala
+		imports	scala:scala-2.12.8	repo	scala
 				schema	scala-2.12.8
 		main	Some	shapeless
 	scala-2.13	id	scala-2.13
@@ -100,8 +98,8 @@ schemas	scala-2.12	id	scala-2.12
 				track	master
 				commit	43140dbfa340f55bd753e2ab5977cc177debd559
 				local	None
-		imports	scala:scala-2.12.8	repo	scala
-				schema	scala-2.12.8
+		imports	scala:scala-2.13.0-m5	repo	scala
+				schema	scala-2.13.0-m5
 		main	Some	shapeless
-main	scala-2.13
+main	scala-2.12
 aliases	
