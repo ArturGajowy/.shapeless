@@ -1,16 +1,17 @@
-version	1
+version	2
 schemas	scala-2.12	id	scala-2.12
 		projects	shapeless	id	shapeless
 				modules	core	id	core
 						kind	library
 						main	None
+						plugin	None
 						manifest	
 						compiler	projectId	scala
 							moduleId	compiler
 							intransitive	true
 						after	shapeless/gen	projectId	shapeless
 								moduleId	gen
-								intransitive	false
+								intransitive	true
 						params	
 						sources	shapeless:core/src/main/scala	shapeless:core/src/main/scala
 							shapeless:core/src/main/scala_2.11+/shapeless	shapeless:core/src/main/scala_2.11+/shapeless
@@ -22,6 +23,7 @@ schemas	scala-2.12	id	scala-2.12
 					gen	id	gen
 						kind	application
 						main	Some	Boilerplate
+						plugin	None
 						manifest	
 						compiler	projectId	scala
 							moduleId	compiler
@@ -37,14 +39,67 @@ schemas	scala-2.12	id	scala-2.12
 				description	
 		repos	base	id	base
 				repo	git@github.com:propensive/base.git
-				refSpec	master
+				track	master
+				commit	b7021d258bd9411bd7662025072d6a8e8c64fa0e
 				local	None
 			shapeless	id	shapeless
 				repo	git@github.com:milessabin/shapeless.git
-				refSpec	master
+				track	master
+				commit	43140dbfa340f55bd753e2ab5977cc177debd559
 				local	None
 		imports	base:2.12.6	repo	base
 				schema	2.12.6
 		main	Some	shapeless
-main	scala-2.12
+	scala-2.13	id	scala-2.13
+		projects	shapeless	id	shapeless
+				modules	core	id	core
+						kind	library
+						main	None
+						plugin	None
+						manifest	
+						compiler	projectId	scala
+							moduleId	compiler
+							intransitive	true
+						after	shapeless/gen	projectId	shapeless
+								moduleId	gen
+								intransitive	true
+						params	
+						sources	shapeless:core/src/main/scala	shapeless:core/src/main/scala
+							shapeless:core/src/main/scala_2.11+/shapeless	shapeless:core/src/main/scala_2.11+/shapeless
+							shapeless:core/src/main/scala_2.13-/shapeless	shapeless:core/src/main/scala_2.13-/shapeless
+							shared:shapeless	shared:shapeless
+						binaries	
+						resources	
+						bloopSpec	None
+					gen	id	gen
+						kind	application
+						main	Some	Boilerplate
+						plugin	None
+						manifest	
+						compiler	projectId	scala
+							moduleId	compiler
+							intransitive	true
+						after	
+						params	
+						sources	src	src
+						binaries	
+						resources	
+						bloopSpec	None
+				main	Some	core
+				license	unknown
+				description	
+		repos	base	id	base
+				repo	git@github.com:propensive/base.git
+				track	master
+				commit	b7021d258bd9411bd7662025072d6a8e8c64fa0e
+				local	None
+			shapeless	id	shapeless
+				repo	git@github.com:milessabin/shapeless.git
+				track	master
+				commit	43140dbfa340f55bd753e2ab5977cc177debd559
+				local	None
+		imports	base:2.12.6	repo	base
+				schema	2.12.6
+		main	Some	shapeless
+main	scala-2.13
 aliases	
