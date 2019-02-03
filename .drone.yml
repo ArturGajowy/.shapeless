@@ -4,6 +4,9 @@ name: default
 steps:
 - name: test
   image: openjdk:8-jdk-slim
+  environment:
+  FURY_INSTALL_SCRIPT_URL:
+    from_secret: FURY_INSTALL_SCRIPT_URL
   commands:
   - apt update
   - apt install -y curl
