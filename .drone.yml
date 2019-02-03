@@ -9,7 +9,8 @@ steps:
     from_secret: FURY_INSTALL_SCRIPT_URL
   commands:
   - apt update
-  - apt install -y curl
+  - apt install -y curl python
   - curl -Lo fury_install.sh https://bit.ly/2UcTXsz
   - yes '/drone/src/fury_install' | bash fury_install.sh
-  - . ~/.bashrc && fury
+  - export FURYHOME=/drone/src/fury_install && source ~/.furyrc/bash
+  - /drone/src/fury_install/bin/fury 
