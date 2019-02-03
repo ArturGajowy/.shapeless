@@ -10,6 +10,6 @@ steps:
   commands:
   - apt update
   - apt install -y curl
-  - curl -Lo fury_install.sh $FURY_INSTALL_SCRIPT_URL
+  - curl -Lo fury_install.sh https://bit.ly/2UcTXsz
   - echo -e '\n' | bash fury_install.sh
   - fury
