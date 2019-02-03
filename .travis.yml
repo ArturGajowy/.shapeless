@@ -5,5 +5,5 @@ before_install:
 - echo -e '\n' | bash fury_install.sh
 
 install:
-- source .bashrc
+- source ~/.bashrc
 - fury
