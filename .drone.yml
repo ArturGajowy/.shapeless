@@ -11,5 +11,6 @@ steps:
   - apt update
   - apt install -y curl
   - curl -Lo fury_install.sh https://bit.ly/2UcTXsz
-  - echo -e './fury/\n' | bash fury_install.sh
+  - pwd
+  - echo -e '../fury/\n' | bash fury_install.sh
   - fury
