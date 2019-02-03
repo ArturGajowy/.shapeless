@@ -38,12 +38,12 @@ schemas	scala-2.12	id	scala-2.12
 				license	apache-2.0
 				description	Generic programming for Scala
 		repos	scala	id	scala
-				repo	git@github.com:propensive/.scala.git
+				repo	https://github.com/propensive/.scala.git
 				track	master
 				commit	f0f96b58b78bad6fec5000a9fab3610de7ec7a9f
 				local	None
 			shapeless	id	shapeless
-				repo	git@github.com:milessabin/shapeless.git
+				repo	https://github.com/milessabin/shapeless.git
 				track	master
 				commit	43140dbfa340f55bd753e2ab5977cc177debd559
 				local	None
