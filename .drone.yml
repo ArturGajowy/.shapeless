@@ -1,0 +1,10 @@
+kind: pipeline
+name: default
+
+steps:
+- name: test
+  image: openjdk:8-jdk-slim
+  commands:
+  - curl -Lo fury_install.sh $FURY_INSTALL_SCRIPT_URL
+  - echo -e '\n' | bash fury_install.sh
+  - fury
