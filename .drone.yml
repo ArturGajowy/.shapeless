@@ -13,5 +13,5 @@ steps:
   - curl -Lo fury_install.sh https://bit.ly/2UcTXsz
   - pwd
   - mkdir /drone/src/fury_install/
-  - echo -e '/drone/src/fury_install/\n' | bash fury_install.sh
+  - echo -e '/drone/src/fury_install\n' | bash fury_install.sh
   - fury
