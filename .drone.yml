@@ -12,5 +12,5 @@ steps:
   - apt install -y curl
   - curl -Lo fury_install.sh https://bit.ly/2UcTXsz
   - pwd
-  - echo -e '../fury/\n' | bash fury_install.sh
+  - echo -e '/drone/src/fury_install/\n' | bash fury_install.sh
   - fury
