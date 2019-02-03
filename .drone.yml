@@ -5,6 +5,7 @@ steps:
 - name: test
   image: openjdk:8-jdk-slim
   commands:
+  - apt update
   - apt install curl
   - curl -Lo fury_install.sh $FURY_INSTALL_SCRIPT_URL
   - echo -e '\n' | bash fury_install.sh
